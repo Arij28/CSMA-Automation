@@ -7,5 +7,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
-  
+  env: {
+    MAILOSAUR_API_KEY: "mvSGfcIaT3VHtUvkMWSpTd15f2iKtI3c",
+  }
 });
