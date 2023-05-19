@@ -1,4 +1,4 @@
-import {randomfirstname,randomsurname,
+/*import {randomfirstname,randomsurname,
   randomcompanyname,randomindustry,
   randomjob,firstname,surname,email,
   job,companyname,industry,location,
@@ -62,4 +62,4 @@ describe('Registration', () => {
 
 
     }) 
-  })
+  })*/

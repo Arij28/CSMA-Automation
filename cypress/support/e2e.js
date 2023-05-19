@@ -15,8 +15,8 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-import 'cypress-mailosaur'
-import "cypress-mailslurp";
+//import 'cypress-mailosaur'
+//import "cypress-mailslurp";
 
 
 // Alternatively you can use CommonJS syntax:

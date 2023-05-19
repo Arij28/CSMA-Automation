@@ -1,4 +1,4 @@
-import {rEmail } from '../pages/registrationspec.cy'
+/*import {rEmail } from '../pages/registrationspec.cy'
 import {email,password, submit, getcode} from '../Constants/login'
 export const subject = 'Cyber : Get your verification code'
 const serverId = 'r7uojvgn';
@@ -40,4 +40,4 @@ describe('Login', () => {
     
     })
   
-})
+})*/

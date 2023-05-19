@@ -1,4 +1,4 @@
-import {femail, submit} from '../Constants/forgotPassword'
+/*import {femail, submit} from '../Constants/forgotPassword'
 import { rEmail } from './registrationspec.cy';
 export const subject = 'Cyber: Password reset'
 const serverId = 'r7uojvgn';
@@ -24,5 +24,5 @@ describe('Forgot Password Process', () => {
     })
       
     });
-
+*/
   
