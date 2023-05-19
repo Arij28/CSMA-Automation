@@ -1,4 +1,4 @@
-import {randomfirstname,randomsurname,
+/*import {randomfirstname,randomsurname,
   randomcompanyname,randomindustry,
   randomjob,firstname,surname,email,
   job,companyname,industry,location,
@@ -6,6 +6,7 @@ import {randomfirstname,randomsurname,
   acceptterms,submit} from '../Constants/register'
 
 import {randomEmail} from '../randomEmail'
+export let rEmail = randomEmail
 
 const serverId = 'r7uojvgn';
     
@@ -48,7 +49,7 @@ describe('Registration', () => {
         if(email.html.links.length > 0){
           let confirmationLink = email.html.links[0].href;
           console.log(confirmationLink)
-          //cy.visit(confirmationLink)
+          cy.visit(confirmationLink)
         }else{
           console.log('No links founded in email')
         }
@@ -61,4 +62,4 @@ describe('Registration', () => {
 
 
     }) 
-  })
+  })*/

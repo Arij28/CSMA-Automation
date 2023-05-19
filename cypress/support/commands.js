@@ -1,3 +1,4 @@
+
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
@@ -23,3 +24,14 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+Cypress.Commands.add("createInbox", () => {
+  return mailslurp.createInbox();
+});
+
+Cypress.Commands.add("waitForLatestEmail", (inboxId) => {
+  // how long we should hold connection waiting for an email to arrive
+  const timeoutMillis = 30_000;
+  return mailslurp.waitForLatestEmail(inboxId, timeoutMillis)
+});

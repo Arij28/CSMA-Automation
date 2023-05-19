@@ -1,0 +1,9 @@
+    "email": "arijslama28@gmail.com",
+    "firstname":"Arij",
+    "surname":"slama",
+    "companyname":"cc",
+    "industry":"idk",
+    "location":"Tunisia",
+    "numberofemployees":"10-50",
+    "password":"Arij_1234",
+    "confirmpassword":"Arij_1234"
