@@ -25,6 +25,12 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+import { MailSlurp } from 'mailslurp-client';
+// set your api key with an environment variable `CYPRESS_API_KEY` or configure using `env` property in config file
+// (cypress prefixes environment variables with CYPRESS)
+const apiKey = Cypress.env('MAILSLURP_API_KEY')
+const mailslurp = new MailSlurp({ apiKey });
+
 
 Cypress.Commands.add("createInbox", () => {
   return mailslurp.createInbox();

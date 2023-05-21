@@ -14,9 +14,9 @@ module.exports = defineConfig ({
   },
 },
   env: {
+    "CYPRESS_MAILSLURP_API_KEY": "98a0b69ff94368df1e65cc21d04311d02f60981f3572d320d01db7779001d1e5"
     //MAILOSAUR_API_KEY : "mvSGfcIaT3VHtUvkMWSpTd15f2iKtI3c",
     //CYPRESS_MAILSLURP_API_KEY : "47e5eb728e573bc66e4b480aadba436399019dc2cd38bfc30059c3d2fc39e03f"
-   
   }
 });
 
