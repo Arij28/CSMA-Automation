@@ -1,19 +1,16 @@
-/*import {randomfirstname,randomsurname,
+import {randomfirstname,randomsurname,
   randomcompanyname,randomindustry,
   randomjob,firstname,surname,email,
   job,companyname,industry,location,
   numberofemployee,password,confirmpassword,
-  acceptterms,submit} from '../Constants/register'
+  acceptterms,submit, link, testEmail } from '../Constants/register'
+  let randomEmail = 'csmaA1000@yopmail.com'
+  
 
-import {randomEmail} from '../randomEmail'
-export let rEmail = randomEmail
-
-const serverId = 'r7uojvgn';
-    
-describe('Registration', () => {
+    describe('Registration', () => {
     it('registers a new user', () => {
       
-      cy.visit('https://csma.ccdev.space/register')
+      cy.visit(link)
 
       cy.get(firstname).type(randomfirstname)
       cy.get(surname).type(randomsurname)
@@ -40,26 +37,5 @@ describe('Registration', () => {
       cy.get(acceptterms).should('be.checked')
       //Clik the button
       cy.get(submit).click()
-
-      cy.mailosaurGetMessage( serverId, {
-        sentTo: randomEmail
-    }).then( email => {
-       console.log(email)
-        expect(email.subject).to.equal('Welcome to cyber');
-        if(email.html.links.length > 0){
-          let confirmationLink = email.html.links[0].href;
-          console.log(confirmationLink)
-          cy.visit(confirmationLink)
-        }else{
-          console.log('No links founded in email')
-        }
-        
-      })
-
-      
-      
-      
-
-
     }) 
-  })*/
+  })

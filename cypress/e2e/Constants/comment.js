@@ -1,11 +1,16 @@
-import { param } from "cypress/types/jquery";
+
+export const comment = 'button[id="c.1"]'
+export const commentField = 'textarea[id=":r0:"]'
+export const save = '[style="background-color: rgb(35, 85, 148); color: rgb(255, 255, 255); border-radius: 6px; width: 147px; height: 52px; font-weight: initial; text-transform: none;"] > .MuiButton-label'
+export const cancel = '[style="background-color: rgb(222, 105, 68); color: rgb(255, 255, 255); border-radius: 6px; width: 147px; height: 52px; font-weight: initial; text-transform: none; margin-left: 15px;"] > .MuiButton-label'
+/*import { param } from "cypress/types/jquery";
 
 export const link = "https://csma.ccdev.space/newassessment";
 export const comment = ''
 export const commentaire = 'nfefgrgebhd jegfvejn jdbfre snjefbvc '
 export const save = ''
 
-/*function generateParagraph(numSentences) {
+function generateParagraph(numSentences) {
     // Array of possible sentence beginnings.
     const starters = [
       'In the first file,',

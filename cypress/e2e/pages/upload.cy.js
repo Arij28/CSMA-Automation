@@ -3,24 +3,21 @@ import { link, upload ,fileName, fileInput, fileType} from '../Constants/upload'
 
 describe('File upload test', () => {
     it('uploads a file', () => {
-        cy.visit(link);
-      cy.get('body').then($body => {
-        const input = '<input type="file" style="display: none">';
-        $body.append(input);
-      });
+      cy.visit(link)
+      
+      cy.get(upload).find('input[type="file"]').then(hiddenInput => {
+        // Perform assertions or interactions with the hidden input element
+        // Example: Assert that the hidden input element is present
+        cy.wrap(hiddenInput).should('exist');})
 
-      cy.fixture(fileName).then(fileContent => {
-        
-        cy.get(upload).click();
+        cy.get(upload).click()
+        cy.get('input[type="file"]').attachFile(fileName);
+    
   
-     cy.get(fileInput).attachFile({
-          fileContent,
-          fileName: fileName,
-          mimeType: fileType
-        });
+    
 
-  
-      });
+      
+    
     });
   });
   

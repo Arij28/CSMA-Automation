@@ -1,5 +1,5 @@
 import {password, submit, getcode, emailfield} from '../Constants/login'
-const testEmail = 'bfc61547-e115-4376-bd09-84e7d5574e3e@mailslurp.biz'
+const testEmail = '7e3ab2fc-aeea-406c-b8ab-b109838780f7@mailslurp.com'
 
   describe('Login', () => {
     it('should log in with valid credentials', async () => {
